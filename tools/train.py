@@ -49,6 +49,7 @@ def parse_args():
         help='id of gpu to use '
         '(only applicable to non-distributed training)')
     parser.add_argument('--seed', type=int, default=None, help='random seed')
+    parser.add_argument('--load-from',  help='load pth')
     parser.add_argument(
         '--deterministic',
         action='store_true',
